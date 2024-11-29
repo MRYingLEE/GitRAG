@@ -8,13 +8,13 @@ In this article, we use Pandas in a Python environment as an example to discuss 
  
 The recent versions of Pandas are as follows:
 
-2.2.3 (September 20, 2024)
-2.2.2 (April 10, 2024)
-2.2.1 (February 22, 2024)
-2.2.0 (January 19, 2024)
-2.1.0 (August 30, 2023)
-2.0.0 (April 3, 2023)
-1.5.3 (January 18, 2023)
+- 2.2.3 (September 20, 2024)
+- 2.2.2 (April 10, 2024)
+-2.2.1 (February 22, 2024)
+- 2.2.0 (January 19, 2024)
+- 2.1.0 (August 30, 2023)
+- 2.0.0 (April 3, 2023)
+- 1.5.3 (January 18, 2023)
 
 ## Which Version of Pandas Are You Using?
  
@@ -38,9 +38,9 @@ For reliable code, especially in environments with fixed versions, attention to 
  
 Here are some situations and strategies for preparing these prompts:
 
-AI Lacks Knowledge of the Package: Prepare a detailed prompt to educate the AI model.
-AI Has Outdated Version Knowledge: Provide a changelog to inform the AI of changes between versions. Use the lowest overlapping version (e.g., 1.5.3) as the knowledge base to minimize confusion.
-AI Needs an Even More Outdated Version: Though rare, use the highest available version (e.g., 2.0.3) as the base and clearly communicate the need for a downgrade.
+- AI Lacks Knowledge of the Package: Prepare a detailed prompt to educate the AI model.
+- AI Has Outdated Version Knowledge: Provide a changelog to inform the AI of changes between versions. Use the lowest overlapping version (e.g., 1.5.3) as the knowledge base to minimize confusion.
+- AI Needs an Even More Outdated Version: Though rare, use the highest available version (e.g., 2.0.3) as the base and clearly communicate the need for a downgrade.
 
 We focus on situation 2 as an example. Unfortunately, relying on AI alone to prepare these prompts, even with file processing and web searching capabilities, often results in incomplete information. I tested tools like Perplexity.ai and GitHub Copilot, but the generated prompts frequently lacked critical details. The root cause is the absence of a standardized changelog format for Python package. Therefore, I manually extracted information from the official Pandas documentation and used Claude.ai to create a satisfactory prompt.
 
