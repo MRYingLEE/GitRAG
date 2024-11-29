@@ -42,7 +42,7 @@ Here are some situations and strategies for preparing these prompts:
 - AI Has Outdated Version Knowledge: Provide a changelog to inform the AI of changes between versions. Use the lowest overlapping version (e.g., 1.5.3) as the knowledge base to minimize confusion.
 - AI Needs an Even More Outdated Version: Though rare, use the highest available version (e.g., 2.0.3) as the base and clearly communicate the need for a downgrade.
 
-We focus on situation 2 as an example. Unfortunately, relying on AI alone to prepare these prompts, even with file processing and web searching capabilities, often results in incomplete information. I tested tools like Perplexity.ai and GitHub Copilot, but the generated prompts frequently lacked critical details. The root cause is the absence of a standardized changelog format for Python package. Therefore, I manually extracted information from the official Pandas documentation and used Claude.ai to create a satisfactory prompt.
+We focus on situation 2 as an example. Unfortunately, relying on AI alone to prepare these prompts, even with file processing and web searching capabilities, often results in incomplete information. I tested tools like Perplexity.ai and GitHub Copilot, but the generated prompts frequently lacked critical details. The root cause is the absence of a standardized changelog format for Python package. Therefore, I manually extracted information from the official Pandas documentation and used GPT-4o of openai to create a satisfactory prompt ([changelog_by_openai](./changelog_by_openai.md)).
 
 ## Who Should Prepare These Prompts?
  
