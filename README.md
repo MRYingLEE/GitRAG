@@ -49,7 +49,7 @@ We focus on situation 2 as an example. Unfortunately, relying on AI alone to pre
 The responsibility for preparing prompts currently falls on developers, which can be burdensome given the need for prompts across multiple packages, versions, AI models, and model versions. Ideally, service vendors should offer this as an extended service in the medium term. In the long term, package developers should create and document these prompts for AI models.
 
 ## Conclusion
-A recently published paper ([2411.05830] GitChameleon: Unmasking the Version-Switching Capabilities of Code Generation Models) mentioned “Cumulative
+A recently published paper [2411.05830 GitChameleon: Unmasking the Version-Switching Capabilities of Code Generation Models](https://arxiv.org/abs/2411.05830) mentioned “Cumulative
 year-over-year (YoY) version releases of popular Python-based machine learning libraries show
 a consistent upward trend, reflecting the rapid pace of development and version updates of code
 libraries and packages.”. So the versions become more and more important in code generation.
