@@ -1,10 +1,10 @@
 # GitRAG
 
-Versions: The Critical and Missing Part of Code Generation
+# Versions: The Critical and Missing Part of Code Generation
 
 In this article, we use Pandas in a Python environment as an example to discuss the role of versions in Generative AI (GenAI) code generation.
 
-Current Versions of Pandas
+## Current Versions of Pandas
  
 The recent versions of Pandas are as follows:
 
@@ -16,24 +16,25 @@ The recent versions of Pandas are as follows:
 2.0.0 (April 3, 2023)
 1.5.3 (January 18, 2023)
 
-Which Version of Pandas Are You Using?
+## Which Version of Pandas Are You Using?
  
 The question of which Pandas version you are using can be confusing. You might always default to the version installed by your environment, lack the permissions to select a version, or only need basic Pandas functionalities.
 
-AI's Knowledge of Pandas Versions
+## AI's Knowledge of Pandas Versions
  
 I used the prompt “What is the latest version of Pandas? Give me a version number only” across several models. While intuition suggests different AI models might provide different answers, even the same model can yield varied responses over time. For instance, I queried OpenAI-4o-mini, with training data up to October 2023, 100 times and noted the version distribution.
 
+<img src="./images/version freqency.png" alt="version freqency" title="version freqency">
 
 This inconsistency highlights that AI might mix features from different versions, leading to confusion similar to that experienced by humans.
 
-Dealing with AI-Generated Code
+## Dealing with AI-Generated Code
  
 If GenAI-generated code works seamlessly for you, that's great. However, many users find the code generation helpful yet frustrating due to occasional errors that are difficult to diagnose. Even advanced workflows, such as reflection patterns, may not work well if AI models are uncertain about version specifics.
 
 For reliable code, especially in environments with fixed versions, attention to versioning is crucial. One effective method is to use versioned, package-specific prompts for AI models.
 
-Preparing Versioned Package-Specific Prompts
+## Preparing Versioned Package-Specific Prompts
  
 Here are some situations and strategies for preparing these prompts:
 
@@ -43,11 +44,11 @@ AI Needs an Even More Outdated Version: Though rare, use the highest available v
 
 We focus on situation 2 as an example. Unfortunately, relying on AI alone to prepare these prompts, even with file processing and web searching capabilities, often results in incomplete information. I tested tools like Perplexity.ai and GitHub Copilot, but the generated prompts frequently lacked critical details. The root cause is the absence of a standardized changelog format for Python package. Therefore, I manually extracted information from the official Pandas documentation and used Claude.ai to create a satisfactory prompt.
 
-Who Should Prepare These Prompts?
+## Who Should Prepare These Prompts?
  
 The responsibility for preparing prompts currently falls on developers, which can be burdensome given the need for prompts across multiple packages, versions, AI models, and model versions. Ideally, service vendors should offer this as an extended service in the medium term. In the long term, package developers should create and document these prompts for AI models.
 
-Conclusion
+## Conclusion
 A recently published paper ([2411.05830] GitChameleon: Unmasking the Version-Switching Capabilities of Code Generation Models) mentioned “Cumulative
 year-over-year (YoY) version releases of popular Python-based machine learning libraries show
 a consistent upward trend, reflecting the rapid pace of development and version updates of code
